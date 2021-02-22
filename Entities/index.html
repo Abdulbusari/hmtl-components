@@ -9,23 +9,31 @@
 
     <body>
         <form method = "GET">
+
+            <!-- for Label is used to specify which input the label is attached to-->
             <label for = "addr"> Address </label>
+            <!-- specifies what kind of data you want entered. lets you type in u address -->
             <input type = "text" name = "address" placeholder = "123 Main Street" size = "30" id = "addr"/>
 
             <br/>
 
+            <!-- for Label is used to specify which input the label is attached to-->
             <label for = "postal"> Postal Code </label>
+ <!-- specifies what kind of data you want entered. type in your postal code-->
             <input type = "text" name = "postal code" placeholder = "A1A 1A1" size = "30" id = "postal"/>
 
             <br/>
-
+              <!-- for Label is used to specify which input the label is attached to-->
             <label for = "city"> City </label>
+            <!-- specifies what kind of data you want entered. type in your city-->
             <input type = "text" name = "city" placeholder = "Winnipeg" size = "30" id = "city"/>
         </form>
 
         <form method = "GET">
+            <!-- for Label is used to specify which input the label is attached to-->
             <label for = "shipping"> Please Select a Shipping Speed </label>
 
+            <!--value can be used to change the text displayed on a button or text input. lets you pick the shipping speed-->
             <select name = "shipping" id = "shipping">
                 <option value = "standard"> Standard Shipping </option>
                 <option value = "two-day"> Two-Day Shipping </option>
@@ -34,24 +42,31 @@
         </form>
 
         <form method = "GET">
-            <p> Please Select a Payment Method </p>
-
+            <b> Please Select a Payment Method </b>
+            <!-- specifies what kind of data you want entered-->
             <input type = "radio" id = "debit" name = "payment method" value = "debit">
+<!-- for Label is used to specify which input the label is attached to-->
             <label for = "debit"> Debit </label>
 
             <br/>
 
+            <!-- specifies what kind of data you want entered-->
             <input type = "radio" id = "credit" name = "payment method" value = "credit">
+            <!-- for Label is used to specify which input the label is attached to-->
             <label for = "credit"> Credit </label>
 
             <br/>
 
+            <!-- specifies what kind of data you want entered-->
+
             <input type = "radio" id = "paypal" name = "payment method" value = "paypal" checked = "true">
-            <label for = "paypal"> PayPal </label>
+            <!-- for Label is used to specify which input the label is attached to-->
+            <label for = "paypal"><u> PayPal </u>  </label>
         </form>
 
         <form method = "GET">
-            <label for = "comments"> Comments </label>
+            <!-- for Label is used to specify which input the label is attached to.any extra comment the shipping company needs to know-->
+            <label for = "comments"> <i>Comments</i> </label>
             <textarea id = "comments" name = "comments" rows = "4" cols = "40"> </textarea>
         </form>
 
@@ -59,6 +74,7 @@
             <label> <input type = "checkbox" name = "emailUpdates" checked> Sign Me Up for Email Updates </label>
             <label> <input type = "checkbox" name = "savePayment" checked> Save my Payment Method </label>
 
+            <!-- specifies what kind of data you want entered-->
             <input type = "submit"/>
         </form>
     </body>
